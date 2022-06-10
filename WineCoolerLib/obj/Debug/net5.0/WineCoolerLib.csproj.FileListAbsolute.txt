@@ -1,0 +1,12 @@
+C:\Users\Lobyl\Documents\3. Semester\TestPractice\WineCoolerSet\WineCoolerLib\WineCoolerLib\bin\Debug\net5.0\WineCoolerLib.deps.json
+C:\Users\Lobyl\Documents\3. Semester\TestPractice\WineCoolerSet\WineCoolerLib\WineCoolerLib\bin\Debug\net5.0\WineCoolerLib.dll
+C:\Users\Lobyl\Documents\3. Semester\TestPractice\WineCoolerSet\WineCoolerLib\WineCoolerLib\bin\Debug\net5.0\WineCoolerLib.pdb
+C:\Users\Lobyl\Documents\3. Semester\TestPractice\WineCoolerSet\WineCoolerLib\WineCoolerLib\obj\Debug\net5.0\WineCoolerLib.csproj.AssemblyReference.cache
+C:\Users\Lobyl\Documents\3. Semester\TestPractice\WineCoolerSet\WineCoolerLib\WineCoolerLib\obj\Debug\net5.0\WineCoolerLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lobyl\Documents\3. Semester\TestPractice\WineCoolerSet\WineCoolerLib\WineCoolerLib\obj\Debug\net5.0\WineCoolerLib.AssemblyInfoInputs.cache
+C:\Users\Lobyl\Documents\3. Semester\TestPractice\WineCoolerSet\WineCoolerLib\WineCoolerLib\obj\Debug\net5.0\WineCoolerLib.AssemblyInfo.cs
+C:\Users\Lobyl\Documents\3. Semester\TestPractice\WineCoolerSet\WineCoolerLib\WineCoolerLib\obj\Debug\net5.0\WineCoolerLib.csproj.CoreCompileInputs.cache
+C:\Users\Lobyl\Documents\3. Semester\TestPractice\WineCoolerSet\WineCoolerLib\WineCoolerLib\obj\Debug\net5.0\WineCoolerLib.dll
+C:\Users\Lobyl\Documents\3. Semester\TestPractice\WineCoolerSet\WineCoolerLib\WineCoolerLib\obj\Debug\net5.0\refint\WineCoolerLib.dll
+C:\Users\Lobyl\Documents\3. Semester\TestPractice\WineCoolerSet\WineCoolerLib\WineCoolerLib\obj\Debug\net5.0\WineCoolerLib.pdb
+C:\Users\Lobyl\Documents\3. Semester\TestPractice\WineCoolerSet\WineCoolerLib\WineCoolerLib\obj\Debug\net5.0\ref\WineCoolerLib.dll
