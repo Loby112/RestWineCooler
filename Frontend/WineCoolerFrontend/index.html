@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- https://www.bootstrapcdn.com/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>WineCoolers</title>
+</head>
+<body style="margin:5px">
+    <div id="app">
+        <button style="margin:5px" @click="getAllCoolers()" class="btn btn-primary">Get all</button>
+        <table class="table table-striped table-dark" v-if="wineCoolers.length">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Capacity</th>
+                    <th>Bottles</th>
+                    <th>Temperature</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="coolers in wineCoolers">
+                    <td>{{coolers.id}}</td>
+                    <td>{{coolers.capacityOfBottles}}</td>
+                    <td>{{coolers.bottlesInStorage}}</td>
+                    <td>{{coolers.temperature}}</td>
+
+                    <td v-if="coolers.status=='Full'">
+                        <span style="color:red">{{coolers.status}}</span> 
+                    </td>
+                    <td v-if="coolers.status=='Empty'">
+                        <span style="color:blue">{{coolers.status}}</span> 
+                    </td>
+                    <td v-if="coolers.status=='Not Full'">
+                        <span style="color:green    ">{{coolers.status}}</span> 
+                    </td>
+                    <td>
+                        <button class="btn-success" @click="addWine(coolers.id)">Add Wine</button>
+                    </td>
+                    
+
+                </tr>
+            </tbody>
+        </table>
+        <div class="row" style="margin: 0px">
+            <input v-model="newWineCooler.capacityOfBottles" placeholder="Capacity" type="number">
+            <input v-model="newWineCooler.temperature" placeholder="Temperature" type="number">
+            <input v-model="newWineCooler.bottlesInStorage" placeholder="In Storage" type="number">
+            <button class="btn btn-primary" @click="addNewCooler()">Add Cooler</button>
+        </div>
+        <div class="row" style="margin:0px">
+            <div>
+                <input v-model="getById" placeholder="id" type="number"/>
+                <button class="btn btn-secondary" @click="getSingleCooler(getById)">Get by Id</button>
+                <div v-if="getWineCooler">
+                    {{getWineCooler.id}} {{getWineCooler.capacityOfBottles}} {{getWineCooler.bottlesInStorage}} 
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <input style="margin:0px" v-model="coolerId" placeholder="Cooler ID" type="number">
+            <button class="btn-success" @click="addWine(coolerId)">Add Wine</button>
+            <div>{{addMessage}}</div>
+        </div>
+
+    </div>
+    <script src="js/index.js"></script>
+</body>
+<style>
+    input{
+        margin-right: 5px; margin-bottom: 15px;
+    }
+    body{
+        background: linear-gradient(red, blue);
+    }
+</style>
